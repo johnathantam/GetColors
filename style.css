@@ -29,7 +29,7 @@ body {
     grid-column: 5/7;
     grid-row: 1/2;
     margin: auto;
-    background-color: #E9EAEF;
+    background-color: #FDFDFD;
     box-shadow: 0 0 5px #C8CAC9;
 }
 
@@ -131,7 +131,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin: auto;
-    background-color: black;
+    background-color: #EEEEEE;
 }
 
 .color-list::-webkit-scrollbar {
@@ -152,9 +152,14 @@ body {
     grid-row: 1/2;
 
     width: 60%;
-    height: 30%;
+    height: 40%;
     border-radius: 25px;
     margin: auto;
     background-color: white;
     border: none;
+    box-shadow: 0 0 5px grey;
+}
+
+.color-list-item-preview:hover {
+    box-shadow: 0 0 15px grey;
 }

@@ -37,7 +37,7 @@ function copyImageToCanvas()
         if (img.width > 300 || img.height > 400)
         {
             var clonedImage = img.clone();
-            Marvin.scale(img, clonedImage, Math.floor(img.width/2), Math.floor(img.height/2));
+            Marvin.scale(img, clonedImage, Math.floor(img.width/1.6), Math.floor(img.height/1.6));
 
             img = clonedImage;
         }
@@ -144,7 +144,7 @@ function assignAllColors(clusters) {
             //also store rgb and hex texts for later on retrieval if needed
             var colorPreview = document.createElement("button");
             colorPreview.className = "color-list-item-preview";
-            colorPreview.hex = "#" + componentToHex(color[0])+componentToHex(color[1])+componentToHex(color[2]);
+            colorPreview.hex = "HEX: #" + componentToHex(color[0])+componentToHex(color[1])+componentToHex(color[2]);
             colorPreview.rgb = "RGB: "+color[0]+" "+color[1]+" "+color[2];
             colorPreview.style.gridColumn = (j+1)+"/"+(j+2);
             colorPreview.style.backgroundColor = "rgb("+color[0]+","+color[1]+","+color[2]+")";
@@ -188,7 +188,7 @@ function assignPallete(clusters) {
             
             var colorPreview = document.createElement("button");
             colorPreview.className = "color-list-item-preview";
-            colorPreview.hex = "#" + componentToHex(color[0])+componentToHex(color[1])+componentToHex(color[2]);
+            colorPreview.hex = "HEX: #" + componentToHex(color[0])+componentToHex(color[1])+componentToHex(color[2]);
             colorPreview.rgb = color[0]+" "+color[1]+" "+color[2];
             colorPreview.style.gridColumn = (j+1)+"/"+(j+2);
             colorPreview.style.backgroundColor = "rgb("+color[0]+","+color[1]+","+color[2]+")";
